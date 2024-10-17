@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import './Post.css'
 
-const Post = () => {
+const Post = ({name}) => {
+
   return (
-    <div>
-      <p>Daniel Avzaradel</p>
+    <div className='post'>
+      <p>Hello, <span>{name}</span></p>
       <p>React.js is awesome!</p>
     </div>
   )

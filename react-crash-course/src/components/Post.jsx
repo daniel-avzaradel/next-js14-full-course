@@ -5,7 +5,7 @@ const Post = ({name}) => {
 
   return (
     <div className={classes.post}>
-      <p>Hello, <span>{name}</span></p>
+      <span>{name}</span>
       <p>React.js is awesome!</p>
     </div>
   )

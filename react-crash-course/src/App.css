@@ -5,14 +5,23 @@
   text-align: center;
 }
 
+body {
+  display: flex;
+  width: 100%;
+}
+
 main {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
   padding: 2rem;
-  background: #e1e1e1;
+  background: #333;
   border-radius: 1rem;
 }
 
 main h1 {
-  color: #22476b;
+  color: #d1d1d1;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 2rem;

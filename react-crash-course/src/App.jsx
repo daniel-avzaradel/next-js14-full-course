@@ -1,5 +1,5 @@
 import './App.css'
-import Post from './components/Post'
+import NewPost from './components/NewPost'
 import PostList from './components/PostList'
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
   return (
     <main>
       <h1>Hello World!</h1>
+      <NewPost />
       <PostList />
     </main>
   )

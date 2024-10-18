@@ -41,10 +41,6 @@
   box-sizing: border-box;
 }
 
-.form input {
-
-}
-
 .actions {
   display: flex;
   justify-content: flex-end;

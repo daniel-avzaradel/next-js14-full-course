@@ -12,6 +12,10 @@ app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({extended: false}))
 
+const routes = require('./routes')
+
+app.use('/posts', routes)
+
 app.listen(PORT, () => {
   console.log(`Server is running on port: ${PORT}`.cyan.underline);
 })

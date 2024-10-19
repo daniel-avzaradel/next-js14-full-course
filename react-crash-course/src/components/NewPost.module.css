@@ -1,23 +1,7 @@
 .form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  background-color: #344c57;
-  width: 100%;
+  background-color: #6233b9;
   padding: 1rem;
-  margin: 2rem auto;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-}
-
-.form div {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  margin: 10px 0;
+  width: 20rem;
 }
 
 .form label {
@@ -35,10 +19,8 @@
   padding: 0.5rem;
   border-radius: 6px;
   border: none;
-  background-color: #8793a3;
+  background-color: #c4a9e4;
   color: #28262c;
-  resize: none;
-  box-sizing: border-box;
 }
 
 .actions {

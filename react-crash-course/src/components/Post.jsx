@@ -1,14 +1,12 @@
-import React from 'react';
-import classes from './Post.module.css'
+import classes from './Post.module.css';
 
-const Post = ({name}) => {
-
+function Post({ author, body }) {
   return (
-    <div className={classes.post}>
-      <span>{name}</span>
-      <p>React.js is awesome!</p>
-    </div>
-  )
+    <li className={classes.post}>
+      <p className={classes.author}>{author}</p>
+      <p className={classes.text}>{body}</p>
+    </li>
+  );
 }
 
-export default Post
+export default Post;

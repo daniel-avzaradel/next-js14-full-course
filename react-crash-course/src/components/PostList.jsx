@@ -32,9 +32,6 @@ function PostsList() {
           <p>Start adding some!</p>
         </div>
       )}
-      <div style={{ textAlign: "center", color: "white" }}>
-        <p>Loading posts...</p>
-      </div>
     </>
   );
 }

@@ -1,8 +1,7 @@
 {
-  "posts": 
-  [
-    { "body": "123", "author": "123" },
-    { "body": "123", "author": "Daniel" },
-    { "body": "444", "author": "444" }
+  "posts": [
+    { "body": "React is awesome!", "author": "Daniel" },
+    { "body": "This course is really helpful to you", "author": "Maximilliam" },
+    { "body": "This course is really good", "author": "Daniel" }
   ]
 }

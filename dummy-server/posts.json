@@ -1,3 +1,7 @@
 {
-  "posts": []
+  "posts": [
+    { "body": "123", "author": "123" },
+    { "body": "123", "author": "Daniel" },
+    { "body": "444", "author": "444" }
+  ]
 }

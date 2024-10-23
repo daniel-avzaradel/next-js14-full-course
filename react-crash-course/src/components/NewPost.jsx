@@ -22,6 +22,7 @@ function NewPost() {
       body: enteredBody,
       author: enteredAuthor,
     };
+    addPostHandler(postData)
   }
 
   return (

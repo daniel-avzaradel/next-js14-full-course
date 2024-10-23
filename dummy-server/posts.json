@@ -1,7 +1,1 @@
-{
-  "posts": [
-    { "body": "React is awesome!", "author": "Daniel" },
-    { "body": "This course is really helpful to you", "author": "Maximilliam" },
-    { "body": "This course is really good", "author": "Daniel" }
-  ]
-}
+{"posts":[{"body":"React is awesome!","author":"Daniel"},{"body":"This course is really helpful to you","author":"Maximilliam"},{"body":"This course is really good","author":"Daniel"},{"author":"Tester","body":"Testing the form submission"},{"author":"Daniel","body":"I don't understand why"}]}

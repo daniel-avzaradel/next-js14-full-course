@@ -9,7 +9,7 @@ const getPosts = async () => {
 
 const storePost = async (post) => {
   const existingPosts = await getPosts();
-  const addPosts = JSON.stringify({posts: [...existingPosts, post]})
+  const addPosts = JSON.stringify({posts: [...existingPosts, {...post, id: (Math.random()*10).toString()}]})
   await fs.writeFile('posts.json', addPosts)
   return addPosts
 }

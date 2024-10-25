@@ -13,14 +13,6 @@ const Meals = () => {
       <p>
         <Link href="/meals/sloppy-joe">Sloppy Joe</Link>
       </p>
-      <main>
-        <p>
-          <Link href="/meals/share">Share</Link>
-        </p>
-        <p>
-          <Link href="/community">Community</Link>
-        </p>
-      </main>
     </main>
   );
 };

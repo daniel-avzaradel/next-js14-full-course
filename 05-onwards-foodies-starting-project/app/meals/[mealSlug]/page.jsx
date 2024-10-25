@@ -4,7 +4,7 @@ const Meal = ({ params }) => {
   return (
     <main>
       <h1>Meal</h1>
-      <p>{params.[mealSlug]}</p>
+      <p>{params.mealSlug}</p>
     </main>
   )
 }

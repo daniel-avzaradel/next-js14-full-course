@@ -13,6 +13,16 @@ body {
   background: radial-gradient(#282c34, #282c34);
 }
 
+main {
+  padding: 5rem;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .header-background {
   position: absolute;
   width: 100%;

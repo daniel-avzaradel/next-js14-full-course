@@ -15,7 +15,6 @@ const MealsPage = () => {
         </Link>
       </p>
       <main className={classes.main}>
-        
       </main>
     </header>
     </>

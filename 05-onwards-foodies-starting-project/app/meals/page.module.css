@@ -1,14 +1,14 @@
 .header {
   gap: 3rem;
   margin: 3rem auto 5rem auto;
-  width: 100%;
-  max-width: 90%;
+  width: 90%;
   color: #ddd6cb;
   font-size: 1.5rem;
 }
 
 .header h1 {
   font-family: 'Montserrat', sans-serif;
+  padding: 0 10vw;
 }
 
 .highlight {
@@ -18,8 +18,16 @@
   -webkit-text-fill-color: transparent;
 }
 
+.headerp {
+  padding: 0 10vw;
+}
+
 .header p {
   margin: 0;
+}
+
+.cta {
+  padding: 0 10vw;
 }
 
 .cta a {

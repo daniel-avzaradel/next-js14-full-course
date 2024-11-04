@@ -34,7 +34,7 @@ const ImagePicker = ({ label, name }) => {
         <input className={classes.input} type="file" id={name} accept="image/png, image/jpeg" 
         name={name} ref={imageInput} onChange={handleImageChange} required />
         <button className={classes.button} type='button' onClick={handlePickClick}>
-          Pick an Image:
+          Pick an Image
         </button>
       </div>
     </div>

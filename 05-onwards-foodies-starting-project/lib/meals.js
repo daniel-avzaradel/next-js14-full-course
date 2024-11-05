@@ -32,4 +32,20 @@ export const saveMeal = async (meal) => {
       throw new Error('Saving image failed!')
     }
   });
+
+  meal.image = `/images/${fileName}`
+
+  db.prepare(`
+    INSERT INTO meals
+      (title, summary, instructions, creator, creator_email, image, slug)
+    VALUES (
+      @title,
+      @summary,
+      @instructions,
+      @creator,
+      @creator_email,
+      @image,
+      @slug
+    )
+    `).run(meal)
 }

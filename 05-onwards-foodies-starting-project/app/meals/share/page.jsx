@@ -3,8 +3,17 @@ import classes from './page.module.css';
 
 export default function ShareMealPage() {
 
-  async function shareMeal() {
+  async function shareMeal(formData) {
     "use server";
+
+    const meal = {
+      title: formData.get('title'),
+      summary: formData.get('summary'),
+      instructions: formData.get('instructions'),
+      image: formData.get('image'),
+      creator: formData.get('creator'),
+      creator_email: formData.get('email'),
+    }
   }
 
   return (
@@ -44,7 +53,7 @@ export default function ShareMealPage() {
               required
             ></textarea>
           </p>
-            <ImagePicker />
+            <ImagePicker label="Your image" name="image" />
           <p className={classes.actions}>
             <button type="submit">Share Meal</button>
           </p>

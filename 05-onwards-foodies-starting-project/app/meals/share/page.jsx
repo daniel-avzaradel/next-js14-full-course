@@ -11,9 +11,12 @@ export default function ShareMealPage() {
       summary: formData.get('summary'),
       instructions: formData.get('instructions'),
       image: formData.get('image'),
-      creator: formData.get('creator'),
+      creator: formData.get('name'),
       creator_email: formData.get('email'),
     }
+
+    console.log(meal);
+    
   }
 
   return (

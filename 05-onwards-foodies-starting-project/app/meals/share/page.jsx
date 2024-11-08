@@ -21,11 +21,11 @@ export default function ShareMealPage() {
         <form className={classes.form} action={formAction}>
           <div className={classes.row}>
             <p>
-              <label htmlFor="name">Your name</label>
+              <label htmlFor="name">Your name:</label>
               <input type="text" id="name" name="name" required />
             </p>
             <p>
-              <label htmlFor="email">Your email</label>
+              <label htmlFor="email">Your email:</label>
               <input type="email" id="email" name="email" required />
             </p>
           </div>

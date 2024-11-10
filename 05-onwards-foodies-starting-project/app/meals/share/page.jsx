@@ -30,15 +30,15 @@ export default function ShareMealPage() {
             </p>
           </div>
           <p>
-            <label htmlFor="title">Title</label>
+            <label htmlFor="title">Title:</label>
             <input type="text" id="title" name="title" required />
           </p>
           <p>
-            <label htmlFor="summary">Short Summary</label>
+            <label htmlFor="summary">Short Summary:</label>
             <input type="text" id="summary" name="summary" required />
           </p>
           <p>
-            <label htmlFor="instructions">Instructions</label>
+            <label htmlFor="instructions">Instructions:</label>
             <textarea
               id="instructions"
               name="instructions"

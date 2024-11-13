@@ -4,10 +4,10 @@ import { redirect } from "next/navigation";
 import { saveMeal } from "./meals";
 
 function isInvalidText(text) {
-  return !text || text.trim() === ''
+  return !text || text.toString().trim() === ''
 }
 
-export const shareMeal = async(formData) => {
+export const shareMeal = async(prevState, formData) => {
     const meal = {
       title: formData.get('title'),
       summary: formData.get('summary'),

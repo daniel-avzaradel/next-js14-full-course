@@ -3,13 +3,22 @@ import classes from './page.module.css'
 import { getMeal } from "@/lib/meals";
 import { notFound } from "next/navigation";
 
-const MealDetailsPage = ({params}) => {
-
-  const meal = getMeal(params.mealSlug);
+export async function generateMetadata({ params }) {
+  const meal = getMeal(params.mealSlug)
 
   if(!meal) {
     notFound();
   }
+
+  return {
+    title: meal.title,
+    description: meal.summary
+  }
+}
+
+const MealDetailsPage = ({params}) => {
+
+  const meal = getMeal(params.mealSlug);
 
   meal.instructions = meal.instructions.replace(/\n/g, "<br>")
 
@@ -17,7 +26,7 @@ const MealDetailsPage = ({params}) => {
     <>
       <header className={classes.header}>
         <div className={classes.image}>
-          <Image src={meal.image} alt={meal.title} fill />
+          <Image src={`https://nextjs-full-course-users-images.s3.amazonaws.com/${meal.image}`} alt={meal.title} fill />
         </div>
         <div className={classes.headerText}>
             <h1>{meal.title}</h1>

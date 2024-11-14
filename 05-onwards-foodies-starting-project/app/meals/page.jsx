@@ -24,7 +24,7 @@ const MealsPage = () => {
       <p className={classes.headerp}>Choose your favorite recipe and cook it yourself. It is easy and fun!</p>
       <p className={classes.cta}>
         <Link href='/meals/share'>
-          Share Your Favorite Recipe
+          Share Your Favorite Recipe:
         </Link>
       </p>
       <main className={classes.main}>

@@ -1,5 +1,5 @@
 .main {
-  padding: 5rem;
+  padding: 2rem 10dvw;
 }
 
 .main div {
@@ -8,4 +8,8 @@
   justify-content: center;
   align-items: flex-start;
   gap: 10px;
+}
+
+.main div a {
+  color: #e1e1e1;
 }

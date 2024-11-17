@@ -7,6 +7,7 @@ const NewsPage = () => {
   return (
     <main className={classes.main}>
       <h1>NEWS PAGE</h1>
+      <br />
       <div>
         <Link href={'/news/first'}>FIRST NEWS PAGE</Link>
         <Link href={'/news/second'}>SECOND NEWS PAGE</Link>

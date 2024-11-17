@@ -1,0 +1,11 @@
+.main {
+  padding: 5rem;
+}
+
+.main div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}

@@ -5,8 +5,10 @@ import Link from 'next/link'
 const NewsDetailsPage = ({ params }) => {
   return (
     <main className={classes.main}>
-      <h1>NEWS #{params.newsSlug.toString().toUpperCase()}</h1>
-      <Link href={'/news'}>{`< Back`}</Link>
+      <h1>NEWS #{params.id.toString().toUpperCase()}</h1>
+      <div>
+        <Link href={'/news'}>{`< Back`}</Link>
+      </div>
     </main>
   )
 }

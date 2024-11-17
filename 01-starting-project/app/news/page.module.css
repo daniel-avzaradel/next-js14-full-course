@@ -10,6 +10,12 @@
   gap: 10px;
 }
 
-.main div a {
+.main ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main ul li a, .main div a {
   color: #e1e1e1;
 }

@@ -1,18 +1,24 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
-import classes from './main-header.module.css'
+import classes from "./main-header.module.css";
 
 const MainHeaderComponent = () => {
   return (
     <header className={classes.header}>
       <h1>NEWS APP</h1>
       <nav>
-        <Link href={'/'}>HOME</Link>
-        <Link href={'/news'}>NEWS</Link>
+        <ul>
+          <li>
+            <Link href={"/"}>HOME</Link>
+          </li>
+          <li>
+            <Link href={"/news"}>NEWS</Link>
+          </li>
+        </ul>
       </nav>
     </header>
-  )
-}
+  );
+};
 
-export default MainHeaderComponent
+export default MainHeaderComponent;

@@ -8,11 +8,17 @@ const NewsPage = () => {
     <main className={classes.main}>
       <h1>NEWS PAGE</h1>
       <br />
-      <div>
-        <Link href={'/news/first'}>FIRST NEWS PAGE</Link>
-        <Link href={'/news/second'}>SECOND NEWS PAGE</Link>
-        <Link href={'/news/third'}>THIRD NEWS PAGE</Link>
-      </div>
+      <ul>
+        <li>
+          <Link href={'/news/first'}>FIRST NEWS PAGE</Link>
+        </li>
+        <li>
+          <Link href={'/news/second'}>SECOND NEWS PAGE</Link>
+        </li>
+        <li>
+          <Link href={'/news/third'}>THIRD NEWS PAGE</Link>
+        </li>
+      </ul>
     </main>
   )
 }

@@ -6,7 +6,7 @@ import classes from "./main-header.module.css";
 const MainHeaderComponent = () => {
   return (
     <header className={classes.header}>
-      <h1>NEWS APP</h1>
+      <h1>NEXTJS NEWS APP</h1>
       <nav>
         <ul>
           <li>

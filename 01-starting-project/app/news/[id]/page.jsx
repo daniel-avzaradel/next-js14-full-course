@@ -1,15 +1,25 @@
 import React from 'react'
-import classes from '../page.module.css'
-import Link from 'next/link'
+import { DUMMY_NEWS } from '@/dummy-news';
+import { notFound } from 'next/navigation';
 
 const NewsDetailsPage = ({ params }) => {
+
+  const newsSlug = params.id;
+  const newsItem = DUMMY_NEWS.find(news => news.slug === newsSlug);
+
+  if(!newsItem) {
+    return notFound();
+  }
+
   return (
-    <main className={classes.main}>
-      <h1>NEWS #{params.id.toString().toUpperCase()}</h1>
-      <div>
-        <Link href={'/news'}>{`< Back`}</Link>
-      </div>
-    </main>
+    <article className='news-article'>
+      <header>
+        <img src={`/images/news/${newsItem.image}`} alt={newsItem.title} />
+        <h1>{newsItem.title}</h1>
+        <time datetime={newsItem.date}>{newsItem.date}</time>
+      </header>
+      <p>{newsItem.content}</p>
+    </article>
   )
 }
 

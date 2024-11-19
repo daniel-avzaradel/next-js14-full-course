@@ -6,6 +6,11 @@
   background: #1d1c1c;
 }
 
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
 .header nav ul {
   display: flex;
   gap: 0 1rem;

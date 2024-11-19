@@ -64,6 +64,11 @@ ul {
   color: #181817;
 }
 
+main {
+  padding: 2rem 10dvw;
+  margin: 0 auto;
+}
+
 #home {
   margin: 3rem auto;
   max-width: 50rem;

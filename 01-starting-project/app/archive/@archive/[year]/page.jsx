@@ -1,11 +1,13 @@
+import NewsList from "@/app/components/news-list"
+import { getNewsForYear } from "@/app/lib/news";
+
 const FilteredNewsPage = async ({ params }) => {
 
-  const { year } = await params
+  const { year } = await params;
+  const news = getNewsForYear(year)
 
   return (
-    <div>
-      <h1>{year}</h1>
-    </div>
+    <NewsList news={news} />
   )
 }
 

@@ -152,8 +152,8 @@ main {
 .news-article {
   padding: 5rem 10dvw;
   user-select: none;
-  background-color: #b0b0a6;
-  color: #2d2d2b;
+  background-color: #252525;
+  color: #b8b8b8;
 }
 
 .news-article img {

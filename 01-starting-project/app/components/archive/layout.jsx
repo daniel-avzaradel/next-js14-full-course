@@ -1,9 +1,9 @@
 import React from 'react'
 
-const layout = () => {
+const ArchiveLayout = ({archive, latest}) => {
   return (
-    <div>layout</div>
+    <div>ArchiveLayout</div>
   )
 }
 
-export default layout
+export default ArchiveLayout

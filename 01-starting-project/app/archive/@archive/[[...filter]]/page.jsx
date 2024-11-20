@@ -32,7 +32,6 @@ const FilteredNewsPage = async ({ params }) => {
         <nav>
           <ul>
             {links.map((link) => {
-              console.log(selectedYear, selectedMonth);
               const href = (selectedYear && selectedMonth) ? `/archive/${link}` : selectedYear ? `/archive/${selectedYear}/${link}` : `/archive/${link}`
               return (
                 <li key={link}>

@@ -2,10 +2,10 @@ import React from 'react'
 import { DUMMY_NEWS } from '@/dummy-news';
 import { notFound } from 'next/navigation';
 
-const NewsDetailsPage = ({ params }) => {
+const NewsDetailsPage = async ({ params }) => {
 
-  const newsSlug = params.id;
-  const newsItem = DUMMY_NEWS.find(news => news.slug === newsSlug);
+  const { id } = await params;
+  const newsItem = DUMMY_NEWS.find(news => news.slug === id);
 
   if(!newsItem) {
     return notFound();

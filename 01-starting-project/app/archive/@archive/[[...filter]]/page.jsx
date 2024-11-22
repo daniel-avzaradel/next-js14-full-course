@@ -25,11 +25,6 @@ const FilteredNewsPage = async ({ params }) => {
     newsContent = <NewsList news={news} />;
   }
 
-  if( selectedYear && !getAvailableNewsYears().includes(selectedYear)) {
-    throw new Error('Invalid filter')
-  }
-
-
   return (
     <>
       <header id="archive-header">
